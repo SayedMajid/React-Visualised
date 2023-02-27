@@ -28,11 +28,24 @@ class Person extends React.Component {
   }
 }
 
+const FunctionPerson = (props) => {
+  const { id, name } = props;
+
+  return (
+    <>
+      <h1>
+        Function Component: {id} {name}
+      </h1>
+    </>
+  );
+};
+
 const div = (
   <div style={styles}>
     <h1>Hello, JSX Handrolled!!!</h1>
     <div>
       <Person id={Math.random(0, 9)} name="Dan Abramov" />
+      <FunctionPerson id={571} name="Dan Abramov" />
     </div>
   </div>
 );
