@@ -31,10 +31,10 @@ export default class Customer extends React.Component {
 
   shouldComponentUpdate() {
     console.log("Should component update called");
-    if (this.state.counter % 2 === 0) {
+    
       return true;
-    }
-    return false;
+    
+    
   }
 
   getSnapshotBeforeUpdate() {
