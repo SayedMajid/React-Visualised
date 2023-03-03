@@ -8,6 +8,7 @@ export default class Weather extends React.Component {
 
   static divStyles = {
     border: "1px solid black",
+    display : "inline-block",
     width: "fit-content",
     margin: "auto",
     padding: "12px",
